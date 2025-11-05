@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvSampleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="Sample text will be here" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="8dp"/>
+
+        <EditText
+            android:id="@+id/etWordExact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Слово для точного поиска" />
+
+        <Button
+            android:id="@+id/btnCheckWordExact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Есть ли слово?" />
+
+        <TextView
+            android:id="@+id/tvResultExact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="-" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="8dp"/>
+
+        <EditText
+            android:id="@+id/etWordWithEnding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Основа слова (без окончания)" />
+
+        <Button
+            android:id="@+id/btnCheckWordWithEnding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Есть ли форма этого слова?" />
+
+        <TextView
+            android:id="@+id/tvResultEnding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="-" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="8dp"/>
+
+        <EditText
+            android:id="@+id/etRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Корень (пример: 'уч')" />
+
+        <Button
+            android:id="@+id/btnFindRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Найти слова с общим корнем" />
+
+        <TextView
+            android:id="@+id/tvResultRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="-" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="8dp"/>
+
+        <Button
+            android:id="@+id/btnCountLongWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Кол-во слов >5 символов" />
+
+        <TextView
+            android:id="@+id/tvResultLongWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="-" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="8dp"/>
+
+        <Button
+            android:id="@+id/btnFindDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Найти даты" />
+
+        <TextView
+            android:id="@+id/tvResultDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="-" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="8dp"/>
+
+        <Button
+            android:id="@+id/btnFindTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Найти время" />
+
+        <TextView
+            android:id="@+id/tvResultTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="-" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="8dp"/>
+
+        <EditText
+            android:id="@+id/etSplitWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Слово для разбиения текста" />
+
+        <Button
+            android:id="@+id/btnSplitText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. Разделить текст по слову" />
+
+        <TextView
+            android:id="@+id/tvResultSplit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="-" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="8dp"/>
+
+
+        <Button
+            android:id="@+id/btnIsChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8. Это ребёнок?" />
+
+        <TextView
+            android:id="@+id/tvResultChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="-" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="32dp"/>
+    </LinearLayout>
+
+</ScrollView>
